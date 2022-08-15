@@ -48,8 +48,7 @@ tr,
 td {
 border: none;
 }
-
-td.inner-content{
+.inner-content{
 width: 200px;
 max-width: 200px;
 align-content: center;
@@ -62,12 +61,13 @@ border: 1px  #E1E1E1;
 background-color: #ff0126;
 box-shadow: 0px 0px 26px 0px rgba(0,0,0,0.13);
 border-radius: 10px;
+font-family: telkomsel-bartik-regular;
 }
-img.img-poin{
+.img-poin{
 max-width:48px;
 width:50px;
 }
-p.inner-desc{
+.inner-desc{
 margin:0 0 4px;
 color:whitesmoke;
 font-size:11px;
@@ -75,26 +75,34 @@ font-family:telkomsel-bartik-regular, sans-serif;
 font-weight:500;
 margin-bottom:2px;
 }
-p.inner-poin-val{
+.inner-poin-val{
 margin:0 0 4px;
 font-family:telkomel-bartik-Bold, sans-serif;
 font-weight:600;
 font-size:20px;
 color:whitesmoke;
 }
-table.poin-history{max-width: 600px;width:100%;border-collapse:collapse;font-family:telkomsel-bartik-regular, sans-serif;font-size:14px;overflow:hidden;word-break:normal;
+.pn-his{max-width: 600px;width:100%;border-collapse:collapse;font-family:telkomsel-bartik-regular, sans-serif;font-size:14px;overflow:hidden;word-break:normal;
 }
-.poin-history-col1{
+.pn-his-col1{
 font-family:telkomsel-bartik-regular;font-size:12px;font-weight:normal;padding:10px 10px 10px 20px;border-width:0px;overflow:hidden;word-break:normal;border-radius:14px 0px 0px 14px;
 }
-.poin-history-col2{
+.pn-his-col2{
 font-family:telkomsel-bartik-regular;font-size:12px;font-weight:normal;padding:10px 10px 10px 10px;border-width:0px;overflow:hidden;word-break:normal;
 }
-.poin-history-col3{
+.pn-his-col3{
 font-family:telkomsel-bartik-bold;font-size:12px;font-weight:normal;padding:10px 20px 10px 10px;border-width:0px;overflow:hidden;word-break:normal;border-radius:0px 14px 14px 0px;
 }
-
-.poin-history-row{border-collapse: collapse; border: none;background-color: #F7F5F6;border-bottom: 8px solid white;border-top: 8px solid white;border-collapse: collapse;}
+.pn-his-row{border-collapse: collapse; border: none;background-color: #F7F5F6;border-bottom: 8px solid white;border-top: 8px solid white;border-collapse: collapse;
+}
+.promo{
+background-color:#fff;color:FF0126;font-family:telkomsel-bartik-regular;
+}
+.img-promo{
+max-width:180px;
+border-radius:10px;
+padding:5px 0px 0px 5px;
+}
 </style>
 <div align="center"><br>
 <table width="100%" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; max-width: 650px; padding: 20px 20px 20px 20px; border: none; border-spacing:0;background-color: #e5e5e5;text-align: center" align="center">
@@ -129,12 +137,12 @@ font-family:telkomsel-bartik-bold;font-size:12px;font-weight:normal;padding:10px
 </tr>
 <tr style="border-collapse: collapse; border: none;background-color: #F7F5F6" align="left">
 <td style="border-bottom: 0; vertical-align:top;padding:0px 20px 0px 20px;" valign="top" align="left">
-<hr height="2px" style="border: 0;height: 2px;width: 40px;text-align: left;align-content: left;color: #ff0000;border-color: #ff0000;border-bottom: 0;background-color: #ff0000;outline-color: #ff0000" align="left">
+<hr height="2px" style="border: 0;height: 2px;width: 40px;text-align: left;align-content: left;color: #ff0126;border-color: #ff0126;border-bottom: 0;background-color: #ff0126;outline-color: #ff0126" align="left">
 </td>
 </tr>
 <tr style="border-collapse: collapse; border: none;background-color: #F7F5F6">
 <td style="vertical-align:top;padding:10px 20px 10px 20px;" valign="top" align="left">
-<p style="margin:15px 0 30px;color:black;font-size:16px;font-family:telkomsel-bartik-regular;font-weight: 580">Untuk pelanggan dengan nomor&nbsp;<strong style="margin:0 0 4px;color:#000000;font-size:16px;font-weight:600">0811819247</strong>, berikut ini status POIN Anda selama bulan Agustus  </p></td></tr>
+<p style="margin:15px 0 30px;color:black;font-size:16px;font-family:telkomsel-bartik-regular;font-weight: 580">Untuk pelanggan dengan nomor&nbsp;<strong style="margin:0 0 4px;color:#000000;font-size:16px;font-weight:600">08111111111</strong>, berikut ini status POIN Anda selama bulan Agustus  </p></td></tr>
 <tr style="border-collapse: collapse; border: none;background-color: #F7F5F6">
 <td style="vertical-align:top;padding:0px 10px  0px 10px; border-radius:0px" valign="top" align="center">
 <table cellpadding="0px;" cellspacing="5px">
@@ -173,52 +181,76 @@ Sisa<br>POIN</p></td>
 </td>
 </tr>
 <tr style="border-collapse: collapse; border: none;background-color: #fff" align="left">
-<td colspan="0" style="vertical-align:top;color:#000000;font-size:16px;line-height:24px;font-family:telkomsel-bartik-bold, sans-serif;font-weight:700;padding:20px 20px 0px 20px;" valign="top">
-<p style="padding-left:20px">Riwayat 8 Transaksi Telkomsel POIN Terakhir</p></td>
+<td colspan="0" style="vertical-align:top;color:#000000;font-size:20px;line-height:24px;font-family:telkomsel-bartik-bold, sans-serif;font-weight:700;padding:20px 20px 0px 20px;" valign="top">
+<p style="padding-left:20px">Riwayat 5 Transaksi Telkomsel POIN Terakhir</p></td>
 </tr>
 <tr style="border-collapse: collapse; border: none;background-color: #fff" align="left">
 <td colspan="0" style="vertical-align:top;color:#000000;font-size:16px;line-height:24px;font-family:telkomsel-bartik-Bold, sans-serif;font-weight:700;padding:1px 20px 10px 20px;" valign="top">
-<table class="poin-history">
-<tbody><tr class="poin-history-row" border="0" >
-<td class="poin-history-col1">31-Agt-2020</td>
-<td class="poin-history-col2">INJECT POIN API BASED</td>
-<td class="poin-history-col3" align="right">   100</td></tr><tr class="poin-history-row">
-<td class="poin-history-col1">28-Agt-2020</td>
-<td class="poin-history-col2">INJECT POIN API BASED</td>
-<td class="poin-history-col3" align="right">   100</td>
-</tr><tr class="poin-history-row">
-<td class="poin-history-col1">24-Agt-2020</td>
-<td class="poin-history-col2">INJECT POIN API BASED</td>
-<td class="poin-history-col3" align="right">   100</td></tr><tr class="poin-history-row">
-<td class="poin-history-col1">24-Agt-2020</td>
-<td class="poin-history-col2">INJECT POIN API BASED</td>
-<td class="poin-history-col3" align="right">   100</td>
-</tr><tr class="poin-history-row">
-<td class="poin-history-col1">24-Agt-2020</td>
-<td class="poin-history-col2">INJECT POIN API BASED</td>
-<td class="poin-history-col3" align="right">   100</td></tr><tr class="poin-history-row">
-<td class="poin-history-col1">24-Agt-2020</td>
-<td class="poin-history-col2">INJECT POIN API BASED</td>
-<td class="poin-history-col3" align="right">   100</td>
-</tr><tr class="poin-history-row">
-<td class="poin-history-col1">24-Agt-2020</td>
-<td class="poin-history-col2">INJECT POIN API BASED</td>
-<td class="poin-history-col3" align="right">   100</td></tr><tr class="poin-history-row">
-<td class="poin-history-col1">24-Agt-2020</td>
-<td class="poin-history-col2">INJECT POIN API BASED</td>
-<td class="poin-history-col3" align="right">   100</td>
-</tr></tbody>
+<table class="pn-his">
+<tbody><tr class="pn-his-row" border="0" >
+<td class="pn-his-col1">31-Agt-2022</td>
+<td class="pn-his-col2">INJECT POIN API BASED</td>
+<td class="pn-his-col3" align="right">100</td></tr>
+<tr class="pn-his-row">
+<td class="pn-his-col1">28-Agt-2022</td>
+<td class="pn-his-col2">INJECT POIN API BASED</td>
+<td class="pn-his-col3" align="right">100</td></tr>
+<tr class="pn-his-row">
+<td class="pn-his-col1">24-Agt-2022</td>
+<td class="pn-his-col2">INJECT POIN API BASED</td>
+<td class="pn-his-col3" align="right">100</td></tr>
+<tr class="pn-his-row">
+<td class="pn-his-col1">24-Agt-2022</td>
+<td class="pn-his-col2">INJECT POIN API BASED</td>
+<td class="pn-his-col3" align="right">100</td></tr>
+<tr class="pn-his-row">
+<td class="pn-his-col1">24-Agt-2022</td>
+<td class="pn-his-col2">INJECT POIN API BASED</td>
+<td class="pn-his-col3" align="right">100</td></tr>
+</tbody>
 </table>
 </td>
 </tr>
+<tr style="border-collapse: collapse; border: none;background-color: #fff" align="left">
+<td style="border-bottom: 0; vertical-align:top;padding:0px 20px 0px 20px;" valign="top" align="left">
+<hr height="2px" style="border: 0;height: 4px;width: 40px;text-align: left;align-content: left;color: #ff0126;border-color: #ff0126;border-bottom: 0;background-color: #ff0126;outline-color: #ff0126;border-radius:15px" align="center">
+</td>
+</tr>
+<tr style="border-collapse: collapse; border: none;background-color: #fff" align="left">
+<td style="vertical-align:top;padding:10px 10px 10px 10px;" valign="top" align="center">
+<p style="margin:0 0 10px;color:#ff0126;font-size:16px;font-family:telkomsel-bartik-bold;font-weight:600;padding-bottom:0px;">
+    Tukar Poinmu Dengan Penawaran Menarik</p>
+</td>
+</tr>
+<tr style="border-collapse: collapse; border: none;background-color: #FFF" >
+<td style="vertical-align:top;padding:0px 10px  0px 10px; border-radius:0px" valign="top" align="center">
+<a href="https://my.telkomsel.com" target="_blank">
+  <table cellpadding="0px;" cellspacing="5px" width="100%" style="padding-bottom:60px">
+<tbody>
+<tr style="border-collapse: collapse; border: none;text-align:center">
+<td class="promo">
+<img class="img-promo" src="https://www.telkomsel.com/media/tpoin/img/image_merchant/small/F-830902120_HALODOCSP_1.jpeg">
+ <br>250 Poin</span></td>
+<td class="promo">
+<img class="img-promo" src="https://www.telkomsel.com/media/tpoin/img/image_merchant/small/F-1644872519_GOFOOD10.jpeg">
+<br>100 Poin</td>
+<td class="promo">
+<img class="img-promo" src="https://www.telkomsel.com/media/tpoin/img/image_merchant/small/F-1359048664_PEGIFLIGHT40.jpeg">
+<br>50 Poin</td>
+</tr>
+</tbody>
+</table></a>
+</td>
+</tr>
+
 <tr style="border-style:hidden;border-width:0px;overflow:hidden;word-break:normal;border-collapse: collapse; border: none;background-color: #000000">
-<td align="center" style="vertical-align: middle;height: 40px;max-height: 40px">
+<td align="center" style="vertical-align: middle;height: 40px;max-height: 40px" colspan="2">
 <p style="color:#fff;font-size:14px;font-family:Helvetica Neue, Helvetica, Arial, sans-serif;font-weight:400;">
 INFO DAN TUKAR POIN DI</p>
 </td>
 </tr>
 <tr style="border-style:hidden;border-width:0px;overflow:hidden;word-break:normal;border-collapse: collapse; border: none;">
-<td align="center" style="align-content: center;text-align: center;background-color: #000;color: #fff;">
+<td align="center" style="align-content: center;text-align: center;background-color: #000;color: #fff;" colspan="2">
 <table cellspacing="0" cellpadding="0" align="center" border="0" style="border: 0;border-style: hidden;border-collapse: collapse;width: 200px;max-width: 200px">
 <tbody>
 <tr>
